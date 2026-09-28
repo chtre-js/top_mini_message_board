@@ -1,9 +1,9 @@
 <html>
   <head><title>Mini messages board</title></head>
 
-  <% messages.forEach((messages) => { %>
-      <p>On <%= messages.added %> <%= messages.user %> wrote :</p>
-      <p><%= messages.text %></p>
+  <% messages.forEach((message) => { %>
+      <p>On <%= message.added %> <%= message.user %> wrote :</p>
+      <p><%= message.text %></p>
   <%})%>
   <a href="/new">Write a new message</a>
 </html>
