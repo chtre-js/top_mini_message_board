@@ -1,0 +1,23 @@
+{
+  "name": "top_mini_message_board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chtre-js/top_mini_message_board.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chtre-js/top_mini_message_board/issues"
+  },
+  "homepage": "https://github.com/chtre-js/top_mini_message_board#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
