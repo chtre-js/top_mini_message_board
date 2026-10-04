@@ -1,16 +1,15 @@
+process.loadEnvFile();
 const express = require("express");
 const app = express();
 const path = require("node:path");
 const newRouter = require("./routes/newRouter");
-const messages = require("./models/db.js");
+const { messagesGet } = require("./controllers/messageController");
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.render("index", {messages: messages})
-})
+app.get("/", messagesGet)
 
 app.use("/new", newRouter);
 
